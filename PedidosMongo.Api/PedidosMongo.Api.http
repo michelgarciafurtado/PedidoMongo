@@ -1,0 +1,6 @@
+@PedidosMongo.Api_HostAddress = http://localhost:5117
+
+GET {{PedidosMongo.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

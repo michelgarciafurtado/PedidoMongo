@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Pedidos.Application/Pedidos.Application.csproj" />
+  <Project Path="Pedidos.Infra/Pedidos.Infra.csproj" />
+  <Project Path="PedidosMongo.Api/PedidosMongo.Api.csproj" />
+  <Project Path="PedidosMongo.Domain/PedidosMongo.Domain.csproj" />
+</Solution>
