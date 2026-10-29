@@ -1,6 +1,20 @@
 @PedidosMongo.Api_HostAddress = http://localhost:5117
 
-GET {{PedidosMongo.Api_HostAddress}}/weatherforecast/
+POST {{PedidosMongo.Api_HostAddress}}/api/Categorias
 Accept: application/json
+Content-Type: application/json
+{"Descricao": "Pizzas" }
+###
+
+GET {{PedidosMongo.Api_HostAddress}}/api/Categorias
+Accept: application/json
+###
+
+POST {{PedidosMongo.Api_HostAddress}}/api/Produtos
+Accept: application/json
+Content-Type: application/json
+{"Descricao": "Cheese-Burguer", "IdCategoria": "d8baf24e-ab14-44ed-ab39-2d01c7615e0e", "Valor":18.3 }
 
 ###
+GET {{PedidosMongo.Api_HostAddress}}/api/Produtos
+Accept: application/json

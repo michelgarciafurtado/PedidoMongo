@@ -15,6 +15,15 @@ public sealed class Produto:EntidadeBase
         Valor = valor;
     }
 
+    public Produto(Guid id, string descricao, Categoria categoria, decimal valor)
+    {
+        Id = id;
+        Descricao = descricao;
+        CategoriaId = categoria.Id;
+        Categoria = categoria;
+        Valor = valor;
+    }
+
     public string Descricao { get; set; }
     public Guid CategoriaId { get; set; }
     public Categoria? Categoria { get; set; }
