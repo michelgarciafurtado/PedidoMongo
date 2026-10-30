@@ -2,12 +2,8 @@
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using PedidosMongo.Domain.Entidades;
-using System;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.Text;
 
-namespace Pedidos.Infra.Configurations;
+namespace PedidosMongo.Infra.Configurations;
 
 public static class ProdutoConfiguration
 {

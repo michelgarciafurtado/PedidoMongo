@@ -2,14 +2,13 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Driver;
-using Pedidos.Application.Interfaces;
-using Pedidos.Infra.DbContext;
-using Pedidos.Infra.Repositories;
 using PedidosMongo.Application.Interfaces;
 using PedidosMongo.Application.UseCase.Categorias;
+using PedidosMongo.Application.UseCase.Pedidos;
 using PedidosMongo.Application.UseCase.Produtos;
 using PedidosMongo.Domain.Interfaces;
 using PedidosMongo.Infra.Consultas;
+using PedidosMongo.Infra.DbContext;
 using PedidosMongo.Infra.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,6 +31,8 @@ builder.Services.AddScoped<IProdutosUseCase, ProdutoUseCase>();
 builder.Services.AddScoped<IProdutosRepository, ProdutoRepository>();
 builder.Services.AddScoped<IProdutosConsultas, ProdutosConsulta>();
 builder.Services.AddScoped<ObterProdutosUseCase>();
+builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
+builder.Services.AddScoped<IPedidoUseCase, PedidosUseCase>();
 
 // Add services to the container.
 

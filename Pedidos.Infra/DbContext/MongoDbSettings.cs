@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pedidos.Infra.DbContext;
+namespace PedidosMongo.Infra.DbContext;
 
 public class MongoDbSettings
 {

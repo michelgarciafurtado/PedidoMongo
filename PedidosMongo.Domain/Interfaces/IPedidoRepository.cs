@@ -1,9 +1,9 @@
 ﻿using PedidosMongo.Domain.Agregados;
 
-namespace PedidosMongo.Domain.Interfaces
+namespace PedidosMongo.Domain.Interfaces;
+
+public interface IPedidoRepository
 {
-    public interface IPedidoRepository
-    {
-        Task ICriarPedido(Pedidos pedido);
-    }
+    Task CriarPedidoAsync(Pedidos pedido);
+    Task<List<Pedidos>> ObterTodosPedidosAsync();
 }

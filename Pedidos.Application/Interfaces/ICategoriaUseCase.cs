@@ -1,9 +1,9 @@
-﻿using Pedidos.Application.Dto.Categoria;
+﻿using PedidosMongo.Application.Dto.Categoria;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pedidos.Application.Interfaces;
+namespace PedidosMongo.Application.Interfaces;
 
 public interface ICategoriaUseCase
 {

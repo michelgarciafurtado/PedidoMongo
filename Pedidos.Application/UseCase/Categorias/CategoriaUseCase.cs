@@ -1,5 +1,5 @@
-﻿using Pedidos.Application.Dto.Categoria;
-using Pedidos.Application.Interfaces;
+﻿using PedidosMongo.Application.Dto.Categoria;
+using PedidosMongo.Application.Interfaces;
 using PedidosMongo.Domain.Entidades;
 using PedidosMongo.Domain.Interfaces;
 using System;

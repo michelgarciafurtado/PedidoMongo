@@ -1,12 +1,12 @@
 ﻿using MongoDB.Driver;
-using Pedidos.Application.Dto.Categoria;
+using PedidosMongo.Application.Dto.Categoria;
 using PedidosMongo.Domain.Entidades;
 using PedidosMongo.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pedidos.Infra.Repositories;
+namespace PedidosMongo.Infra.Repositories;
 
 public class CategoriaRepository:ICategoriaRepository
 {

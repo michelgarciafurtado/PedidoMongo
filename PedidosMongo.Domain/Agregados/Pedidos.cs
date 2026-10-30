@@ -9,7 +9,7 @@ namespace PedidosMongo.Domain.Agregados;
 
 public class Pedidos:EntidadeBase
 {
-    public Pedidos(DateTime dataPedido, Guid idCliente, Cliente? cliente, Endereco? enderecoEntrega, StatusPedidoEnum status, List<Item>? itens, decimal vlTotal)
+    public Pedidos(DateTime dataPedido, Guid idCliente, Cliente? cliente, Endereco? enderecoEntrega, StatusPedidoEnum status, List<Item>? itens)
     {
         DataPedido = dataPedido;
         IdCliente = idCliente;
@@ -17,7 +17,15 @@ public class Pedidos:EntidadeBase
         EnderecoEntrega = enderecoEntrega;
         Status = status;
         Itens = itens;
-        VlTotal = vlTotal;
+        VlTotal = CalculaValorTotal();
+    }
+
+    private decimal CalculaValorTotal()
+    {
+        if (Itens == null || !Itens.Any())
+            throw new ArgumentException("Pedido sem itens");
+        var resultado = Itens.Sum(item => item.ValorUn * item.Qtd);
+        return resultado;
     }
 
     public DateTime DataPedido { get; set; }

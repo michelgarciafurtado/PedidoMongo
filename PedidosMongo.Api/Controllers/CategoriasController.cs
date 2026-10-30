@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Pedidos.Application.Dto.Categoria;
-using Pedidos.Application.Interfaces;
+using PedidosMongo.Application.Dto.Categoria;
+using PedidosMongo.Application.Interfaces;
 
 namespace PedidosMongo.Api.Controllers
 {

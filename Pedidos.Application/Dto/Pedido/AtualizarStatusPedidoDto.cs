@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pedidos.Application.Dto.Pedido;
+namespace PedidosMongo.Application.Dto.Pedido;
 
 public record AtualizarStatusPedidoDto
 (

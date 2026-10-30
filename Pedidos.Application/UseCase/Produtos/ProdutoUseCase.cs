@@ -2,9 +2,6 @@
 using PedidosMongo.Application.Interfaces;
 using PedidosMongo.Domain.Entidades;
 using PedidosMongo.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PedidosMongo.Application.UseCase.Produtos;
 

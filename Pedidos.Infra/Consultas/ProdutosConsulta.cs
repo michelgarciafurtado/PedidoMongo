@@ -1,5 +1,5 @@
 ﻿using MongoDB.Driver;
-using Pedidos.Application.Dto.Categoria;
+using PedidosMongo.Application.Dto.Categoria;
 using PedidosMongo.Application.Consultas;
 using PedidosMongo.Application.Dto.Produto;
 using PedidosMongo.Application.Interfaces;

@@ -1,4 +1,4 @@
-﻿using Pedidos.Application.Dto.Categoria;
+﻿using PedidosMongo.Application.Dto.Categoria;
 
 namespace PedidosMongo.Application.Dto.Produto;
 
